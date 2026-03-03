@@ -9,7 +9,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float attackRange = 2.0f;
     [SerializeField] private LayerMask enemyLayer;
-    [SerializeField] private Transform attackTransform;
+    [SerializeField] private Transform attackTransformRight;
+    [SerializeField] private Transform attackTransformLeft;
     [SerializeField] private float damageAmount = 1.0f;
     [SerializeField] private float attackTime = 1.0f;
     private RaycastHit2D[] hits;
@@ -47,7 +48,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void AttackLeft()
     {
-        hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, enemyLayer);
+        hits = Physics2D.CircleCastAll(attackTransformLeft.position, attackRange, transform.right, 0f, enemyLayer);
 
         for (int i = 0; i < hits.Length; i++)
         {
@@ -66,7 +67,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void AttackRight()
     {
-        hits = Physics2D.CircleCastAll(attackTransform.position, attackRange,transform.right, 0f , enemyLayer);
+        hits = Physics2D.CircleCastAll(attackTransformRight.position, attackRange,transform.right, 0f , enemyLayer);
 
         for (int i = 0; i < hits.Length; i++)
         {
@@ -83,7 +84,8 @@ public class NewMonoBehaviourScript : MonoBehaviour
     
     private void OnDrawGizmosSelected()
     {
-        Gizmos.DrawWireSphere(attackTransform.position, attackRange);
+        Gizmos.DrawWireSphere(attackTransformRight.position, attackRange);
+        Gizmos.DrawWireSphere(attackTransformLeft.position, attackRange);
     }
     /*
     public IEnumerator DamageWhileSlashIsActive()
