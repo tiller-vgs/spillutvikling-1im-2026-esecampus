@@ -12,7 +12,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     [SerializeField] private Transform attackTransformRight;
     [SerializeField] private Transform attackTransformLeft;
     [SerializeField] private float damageAmount = 1.0f;
-    [SerializeField] private float attackTime = 1.0f;
+    [SerializeField] private float attackTime = 0.6f;
     private RaycastHit2D[] hits;
 
     private float attackTimeCounter = 0.0f;

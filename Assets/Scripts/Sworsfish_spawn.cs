@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawnerSword : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public float spawnYMin = -4f;
