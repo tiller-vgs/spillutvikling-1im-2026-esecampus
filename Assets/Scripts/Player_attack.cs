@@ -30,19 +30,41 @@ public class NewMonoBehaviourScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Attack") && attackTimeCounter >= attackTime)
+        if (Input.GetButtonDown("AttackRight") && attackTimeCounter >= attackTime)
             {
             attackTimeCounter = 0.0f;
-            Attack();
+            AttackRight();
             //anim.SetTrigger("Attack");
             }
+        if (Input.GetButtonDown("AttackLeft") && attackTimeCounter >= attackTime)
+        {
+            attackTimeCounter = 0.0f;
+            AttackLeft();
+        }
 
         attackTimeCounter += Time.deltaTime;
     }
 
+    private void AttackLeft()
+    {
+        hits = Physics2D.CircleCastAll(attackTransform.position, attackRange, transform.right, 0f, enemyLayer);
 
-    
-    private void Attack()
+        for (int i = 0; i < hits.Length; i++)
+        {
+            IDamageable iDamageable = hits[i].collider.gameObject.GetComponent<IDamageable>();
+
+            if (iDamageable != null)
+            {
+                Debug.Log("Hit");
+                iDamageable.Damage(damageAmount);
+            }
+        }
+
+    }
+
+
+
+    private void AttackRight()
     {
         hits = Physics2D.CircleCastAll(attackTransform.position, attackRange,transform.right, 0f , enemyLayer);
 
