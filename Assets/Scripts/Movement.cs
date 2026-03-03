@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("Fire3") &&  !isGrounded())
+        if (Input.GetButtonDown("Fall") &&  !isGrounded())
             {
             rb.gravityScale = DownForce;
                 
