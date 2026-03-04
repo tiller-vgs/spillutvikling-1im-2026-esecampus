@@ -3,7 +3,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
-    public float speed = 2f;
+    [SerializeField]private float speed = 2f;
     public float detectionRadius = 5f;
     public Transform player;
 
