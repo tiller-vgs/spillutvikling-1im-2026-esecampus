@@ -2,11 +2,11 @@ using UnityEngine;
 using Unity;
 public class Movement : MonoBehaviour
 {
-    private float speed = 5f;
+    [SerializeField]private float speed = 5f;
     private float horizontalInput;
-    private float JumpingPower = 16f;
+    [SerializeField]private float JumpingPower = 16f;
     private bool isFacingRight = true;
-    private float DownForce = 10f;
+    [SerializeField]private float DownForce = 10f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform grounCheck;
