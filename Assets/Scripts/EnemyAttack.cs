@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public int attackDamage = 1;
-    public float attackRange = 1f;
-    public float attackCooldown = 1f;
+    [SerializeField]private int attackDamage = 1;
+    [SerializeField]private float attackRange = 1f;
+    [SerializeField]private float attackCooldown = 1f;
 
     Transform player;
     float cooldownTimer = 0f;
