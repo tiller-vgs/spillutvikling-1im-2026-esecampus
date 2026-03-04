@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3fd35839b3aa8dc47903226aa57b6433
+guid: 5d3b26a10365d4a5f93af250276e77b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1993050390034824194
-    second: arena_0
+      213: 2527264287544501689
+    second: Aernaaaaaaa_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arena_0
+      name: Aernaaaaaaa_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 159
-        width: 640
-        height: 322
+        y: 0
+        width: 480
+        height: 270
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ef3458ada334754e0800000000000000
-      internalID: -1993050390034824194
+      spriteID: 9b5ee90ca75a21320800000000000000
+      internalID: 2527264287544501689
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      arena_0: -1993050390034824194
+      Aernaaaaaaa_0: 2527264287544501689
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

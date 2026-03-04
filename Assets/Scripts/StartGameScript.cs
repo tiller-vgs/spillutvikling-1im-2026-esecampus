@@ -7,6 +7,6 @@ public class StartGameScript : MonoBehaviour
     public void LoadGameScene()
     {
         Debug.Log("fweh");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
 }
