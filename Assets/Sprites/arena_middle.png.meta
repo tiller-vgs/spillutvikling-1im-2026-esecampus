@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 902152c121ba14ead8db25c1f08d0ebd
+guid: 4e1197ed0454343009f065ac7f909667
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 649223268058989734
-    second: Button_0
+      213: 2496600886483498032
+    second: arena_middle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_0
+      name: arena_middle_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 5
-        width: 90
-        height: 22
+        x: 0
+        y: 15
+        width: 64
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a403906f11820900800000000000000
-      internalID: 649223268058989734
+      spriteID: 03436c85745b5a220800000000000000
+      internalID: 2496600886483498032
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Button_0: 649223268058989734
+      arena_middle_0: 2496600886483498032
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
