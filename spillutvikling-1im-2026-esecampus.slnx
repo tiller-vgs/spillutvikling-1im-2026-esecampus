@@ -1,4 +1,7 @@
 ﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>
+﻿<Solution>
   <Project Path="Unity.Timeline.csproj" />
   <Project Path="Unity.PlasticSCM.Editor.csproj" />
   <Project Path="Unity.2D.Aseprite.Editor.csproj" />
