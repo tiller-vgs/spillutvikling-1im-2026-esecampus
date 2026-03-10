@@ -23,7 +23,14 @@ public class EnemyAttack : MonoBehaviour
         float dist = Vector2.Distance(transform.position, player.position);
         if (dist <= attackRange && cooldownTimer <= 0f)
         {
-            TryAttack();
+            if (PauseMenu.IsPaused)
+            {
+                Debug.Log("Enemy er slem");
+            }
+            else
+            { 
+                TryAttack();
+        }
         }
     }
 

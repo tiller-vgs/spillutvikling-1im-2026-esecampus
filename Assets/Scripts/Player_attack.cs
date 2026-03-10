@@ -30,20 +30,27 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButtonDown("AttackRight") && attackTimeCounter >= attackTime)
-            {
-            attackTimeCounter = 0.0f;
-            AttackRight();
-            //anim.SetTrigger("Attack");
-            }
-        if (Input.GetButtonDown("AttackLeft") && attackTimeCounter >= attackTime)
+        if (PauseMenu.IsPaused)
         {
-            attackTimeCounter = 0.0f;
-            AttackLeft();
+            return;
         }
+        else
+        {
 
-        attackTimeCounter += Time.deltaTime;
+            if (Input.GetButtonDown("AttackRight") && attackTimeCounter >= attackTime)
+            {
+                attackTimeCounter = 0.0f;
+                AttackRight();
+                //anim.SetTrigger("Attack");
+            }
+            if (Input.GetButtonDown("AttackLeft") && attackTimeCounter >= attackTime)
+            {
+                attackTimeCounter = 0.0f;
+                AttackLeft();
+            }
+
+            attackTimeCounter += Time.deltaTime;
+        }
     }
 
     private void AttackLeft()
