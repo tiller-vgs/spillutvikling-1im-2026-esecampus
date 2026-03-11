@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.8584906, g: 0.92407596, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.84061944, g: 0.9366511, b: 0.9622642, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 376911677}
   - component: {fileID: 376911680}
   - component: {fileID: 376911679}
+  - component: {fileID: 376911681}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -594,6 +595,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ee11ddcb29b9aa4a89778f0913241bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Quit_Script
+--- !u!114 &376911681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376911676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e3910849d2ec640bcdf8e1998b945a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorChange
+  cursorTexture: {fileID: 2800000, guid: 4fd3b4be29777e44eaf2b080abd564c1, type: 3}
 --- !u!1 &436357093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,7 +1621,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.88113207, g: 0.90814203, b: 1, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3214,6 +3228,7 @@ MonoBehaviour:
   speed: 0.5
   detectionRadius: 20
   player: {fileID: 560209624}
+  Target: {fileID: 560209621}
 --- !u!1 &1522924780
 GameObject:
   m_ObjectHideFlags: 0

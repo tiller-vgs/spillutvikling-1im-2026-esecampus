@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = false;
         Pause_Menu.SetActive(false);
         IsPaused = false;
 
@@ -24,13 +25,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (IsPaused)
+            if (!IsPaused)
             {
-                ResumeGame();
+                PauseGame();
             }
             else
             {
-                PauseGame();
+                Debug.Log("Vi tok bort vlaget til å trykke esc for å komme seg ut fra pausemeny");
             }
         }
     }
@@ -41,14 +42,16 @@ public class PauseMenu : MonoBehaviour
                Time.timeScale = 0f;
         Pause_Menu.SetActive(true);
         IsPaused = true;
+        Cursor.visible = true;
 
-        }
+    }
 
     public void ResumeGame()
     {
         Time.timeScale = 1f;
         Pause_Menu.SetActive(false);
         IsPaused = false;
+        Cursor.visible = false;
 
     }
 }

@@ -6,6 +6,7 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField]private float speed = 2f;
     public float detectionRadius = 5f;
     public Transform player;
+    [SerializeField] public GameObject Target;
 
     Rigidbody2D rb;
 
@@ -33,5 +34,12 @@ public class EnemyMovement : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
         }
+    }
+    void Update()
+    {
+        Vector3 Look = transform.InverseTransformPoint(Target.transform.position);
+        float Angle = Mathf.Atan2(Look.y, Look.x) * Mathf.Rad2Deg ;
+
+        transform.Rotate(0, 0, Angle);
     }
 }
