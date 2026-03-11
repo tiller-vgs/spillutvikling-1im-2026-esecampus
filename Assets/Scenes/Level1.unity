@@ -129,7 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 50523832}
   - component: {fileID: 50523833}
-  m_Layer: 0
+  - component: {fileID: 50523834}
+  m_Layer: 5
   m_Name: Hearth_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +146,7 @@ Transform:
   m_GameObject: {fileID: 50523831}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 1.4, z: 0}
+  m_LocalPosition: {x: -1, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,6 +211,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &50523834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50523831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7607b3dd680aa421d932b1f2559b3595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &250084564
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +370,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 415739001}
-  - component: {fileID: 415739002}
   m_Layer: 0
   m_Name: Hearts
   m_TagString: PlayerHealth
@@ -383,18 +395,6 @@ Transform:
   - {fileID: 1195833027}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415739002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415739000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d81ac8e29ae354c06bb86f7ade64d272, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &436357093
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.005479276, y: -0.0047643483}
+  m_Offset: {x: -0.0071608424, y: -0.0065495074}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -906,7 +906,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.9815588, y: 0.7859499}
+  m_Size: {x: 1.0034579, y: 0.7802716}
   m_EdgeRadius: 0
 --- !u!114 &560209626
 MonoBehaviour:
@@ -1516,7 +1516,8 @@ GameObject:
   m_Component:
   - component: {fileID: 831870941}
   - component: {fileID: 831870942}
-  m_Layer: 0
+  - component: {fileID: 831870943}
+  m_Layer: 5
   m_Name: Hearth_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1532,7 +1533,7 @@ Transform:
   m_GameObject: {fileID: 831870940}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1, y: 1.4, z: 0}
+  m_LocalPosition: {x: -1.5, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1597,6 +1598,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &831870943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831870940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c606466e6ba4e029e308d0d2c66c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1053389266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,7 +1880,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1195833027}
   - component: {fileID: 1195833028}
-  m_Layer: 0
+  - component: {fileID: 1195833029}
+  m_Layer: 5
   m_Name: Hearth_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1883,7 +1897,7 @@ Transform:
   m_GameObject: {fileID: 1195833026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6, y: 1.4, z: 0}
+  m_LocalPosition: {x: -2, y: 1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1948,6 +1962,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1195833029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195833026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191858fba12d548ce9a73933179b3198, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &1320785386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2371,7 +2397,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0016584545, y: 0.0013103485}
+  m_Offset: {x: 0.0008883476, y: -0.0012369156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2381,7 +2407,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.29714367, y: 0.17751694}
+  m_Size: {x: 0.4142961, y: 0.24373436}
   m_EdgeRadius: 0
 --- !u!50 &1503977511
 Rigidbody2D:
