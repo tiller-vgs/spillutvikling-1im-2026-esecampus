@@ -40,6 +40,7 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+        
     }
 
     private bool isGrounded()

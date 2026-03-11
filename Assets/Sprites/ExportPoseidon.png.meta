@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 10e19ddc3f51b4b6a9525ec2b09ef4a8
+guid: f61e7e5af520c47a3a3b86eb1ab50ded
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4861878205644965853
-    second: Esecampus_Animated_0
+      213: -899839553335185783
+    second: ExportPoseidon_0
   - first:
-      213: -7546181052138063395
-    second: Esecampus_Animated_1
+      213: 8309948542607722697
+    second: ExportPoseidon_1
   - first:
-      213: 8305534916012086119
-    second: Esecampus_Animated_2
+      213: -6898179458995023310
+    second: ExportPoseidon_2
   - first:
-      213: 7839339596342675684
-    second: Esecampus_Animated_3
+      213: 5080512535672680105
+    second: ExportPoseidon_3
+  - first:
+      213: 2876422610765046620
+    second: ExportPoseidon_4
+  - first:
+      213: 9204816414922806645
+    second: ExportPoseidon_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Esecampus_Animated_0
+      name: ExportPoseidon_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 7
-        width: 64
-        height: 51
+        x: 0
+        y: 0
+        width: 129
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd78eacf77cd87340800000000000000
-      internalID: 4861878205644965853
+      spriteID: 98e2c9c91b02383f0800000000000000
+      internalID: -899839553335185783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esecampus_Animated_1
+      name: ExportPoseidon_1
       rect:
         serializedVersion: 2
-        x: 63
-        y: 10
-        width: 63
-        height: 52
+        x: 127
+        y: 0
+        width: 130
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd9f6808054964790800000000000000
-      internalID: -7546181052138063395
+      spriteID: 9c888e7eb2ed25370800000000000000
+      internalID: 8309948542607722697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esecampus_Animated_2
+      name: ExportPoseidon_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 10
-        width: 61
-        height: 54
+        x: 255
+        y: 0
+        width: 130
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 76311826000334370800000000000000
-      internalID: 8305534916012086119
+      spriteID: 23294b5845eb440a0800000000000000
+      internalID: -6898179458995023310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Esecampus_Animated_3
+      name: ExportPoseidon_3
       rect:
         serializedVersion: 2
-        x: 193
-        y: 7
-        width: 60
-        height: 56
+        x: 383
+        y: 0
+        width: 130
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e8c8a904ddeacc60800000000000000
-      internalID: 7839339596342675684
+      spriteID: 9ae60b5cb3b918640800000000000000
+      internalID: 5080512535672680105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExportPoseidon_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 130
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c536d82ef1b1be720800000000000000
+      internalID: 2876422610765046620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExportPoseidon_5
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 0
+        width: 129
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 575982a92c31ebf70800000000000000
+      internalID: 9204816414922806645
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Esecampus_Animated_0: 4861878205644965853
-      Esecampus_Animated_1: -7546181052138063395
-      Esecampus_Animated_2: 8305534916012086119
-      Esecampus_Animated_3: 7839339596342675684
+      ExportPoseidon_0: -899839553335185783
+      ExportPoseidon_1: 8309948542607722697
+      ExportPoseidon_2: -6898179458995023310
+      ExportPoseidon_3: 5080512535672680105
+      ExportPoseidon_4: 2876422610765046620
+      ExportPoseidon_5: 9204816414922806645
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player_health : MonoBehaviour, IDamageable
 {
-    private float PlayerHealth = 3;
+    public float PlayerHealth = 3;
     public bool PlayerDead = false;
 
     public bool HasTakenDamage { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
