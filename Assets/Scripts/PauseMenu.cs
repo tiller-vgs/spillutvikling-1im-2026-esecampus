@@ -8,6 +8,10 @@ public class PauseMenu : MonoBehaviour
     public static bool IsPaused;
 
 
+    private void OnEnable()
+    {
+        ResumeGame();
+    }
 
     private void Start()
     {
@@ -42,7 +46,7 @@ public class PauseMenu : MonoBehaviour
 
     public void ResumeGame()
     {
-               Time.timeScale = 1f;
+        Time.timeScale = 1f;
         Pause_Menu.SetActive(false);
         IsPaused = false;
 
