@@ -30,6 +30,7 @@ public class EnemyHealth : MonoBehaviour, IDamageable
 
     private void Die()
     {
+        DestroyingPlatform.points += 1f;
         Destroy(gameObject);
 
     }
