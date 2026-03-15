@@ -52,6 +52,7 @@ public class PauseMenu : MonoBehaviour
         Pause_Menu.SetActive(false);
         IsPaused = false;
         Cursor.visible = false;
+        Debug.Log("Resumer spillet");
 
     }
 }

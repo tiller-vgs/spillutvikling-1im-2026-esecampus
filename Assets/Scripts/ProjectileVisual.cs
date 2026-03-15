@@ -5,6 +5,7 @@ using System.Collections;
 public class ProjectileVisual : MonoBehaviour
 {
     [SerializeField] private Transform projectileVisual;
+    [SerializeField] private Transform projectileShadow;
     [SerializeField] private Projectile projectile;
 
     private void Update()
@@ -15,6 +16,7 @@ public class ProjectileVisual : MonoBehaviour
     private void UpdateProjectileRotation() {
         Vector3 projectileMoveDir = projectile.GetProjectileMoveDir();
 
-        //projectileVisual.transform.rotation = Quaternion.Euler(0, 0, Mathf, Atan2(projectileMoveDir.y, projectileMoveDir.x) * Mathf.Rad2Deg);
+        projectileVisual.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(projectileMoveDir.y, projectileMoveDir.x) * Mathf.Rad2Deg);
+        projectileShadow.transform.rotation = Quaternion.Euler(0, 0, Mathf.Atan2(projectileMoveDir.y, projectileMoveDir.x) * Mathf.Rad2Deg);
     }
 }

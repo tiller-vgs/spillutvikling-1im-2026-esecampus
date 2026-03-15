@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa14f4c78be791b46ae6acb922ca4a5d
+guid: d8bbe395b0cdeab4bb27fe07542abe1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1844651346371802258
-    second: Sword-fish_0
+      213: -841746284071148616
+    second: swordingffisk_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword-fish_0
+      name: swordingffisk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 18
-        width: 60
-        height: 23
+        x: 1
+        y: 20
+        width: 61
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6b0015bf5b7666e0800000000000000
-      internalID: -1844651346371802258
+      spriteID: 8b32fe2e6348154f0800000000000000
+      internalID: -841746284071148616
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sword-fish_0: -1844651346371802258
+      swordingffisk_0: -841746284071148616
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

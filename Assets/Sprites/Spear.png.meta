@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa14f4c78be791b46ae6acb922ca4a5d
+guid: 2ed35d480c6c68c489ca43e2f1cf1fca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1844651346371802258
-    second: Sword-fish_0
+      213: 6108012597462862368
+    second: Spear_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword-fish_0
+      name: Spear_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 18
-        width: 60
-        height: 23
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6b0015bf5b7666e0800000000000000
-      internalID: -1844651346371802258
+      spriteID: 02a8263881504c450800000000000000
+      internalID: 6108012597462862368
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sword-fish_0: -1844651346371802258
+      Spear_0: 6108012597462862368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

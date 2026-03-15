@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa14f4c78be791b46ae6acb922ca4a5d
+guid: a1761f30d8f6fdb49bc5c8cdbc43c8d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1844651346371802258
-    second: Sword-fish_0
+      213: -2365659144287247064
+    second: SadFace_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sword-fish_0
+      name: SadFace_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 18
-        width: 60
-        height: 23
+        y: 0
+        width: 171
+        height: 148
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e6b0015bf5b7666e0800000000000000
-      internalID: -1844651346371802258
+      spriteID: 825aa15ca8d7b2fd0800000000000000
+      internalID: -2365659144287247064
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sword-fish_0: -1844651346371802258
+      SadFace_0: -2365659144287247064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

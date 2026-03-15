@@ -34,8 +34,10 @@ public class Projectile : MonoBehaviour
 
         Vector3 trajectoryRange = target.position - trajectoryStartPoint;
         if (trajectoryRange.x < 0)
-            // shooter located bhind the player
-            moveSpeed = -moveSpeed;
+        { 
+        // shooter located bhind the player 
+        moveSpeed = -moveSpeed;
+        }
         float nextPositionX = transform.position.x + moveSpeed * Time.deltaTime;
         float nextPositionXNormalized = (nextPositionX - trajectoryStartPoint.x) / trajectoryRange.x;
 
@@ -58,7 +60,7 @@ public class Projectile : MonoBehaviour
     public void InitializeProjectile(Transform target, float maxMoveSpeed, float trajectoryMaxRelativeHeight)
     {
         this.target = target;
-        this.maxMoveSpeed = moveSpeed;
+        this.maxMoveSpeed = maxMoveSpeed;
         float xDistanceToTarget = target.position.x - transform.position.x;
 
         this.trajectoryMaxRelativeHeight = Mathf.Abs(xDistanceToTarget) * trajectoryMaxRelativeHeight;
