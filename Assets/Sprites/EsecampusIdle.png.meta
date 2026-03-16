@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 5d3b26a10365d4a5f93af250276e77b2
+guid: 971b2e9d4f2f848228721e2fd484321d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2527264287544501689
-    second: Aernaaaaaaa_0
+      213: -6633930060427903834
+    second: EsecampusIdle_0
+  - first:
+      213: 5581536088279241280
+    second: EsecampusIdle_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aernaaaaaaa_0
+      name: EsecampusIdle_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 480
-        height: 270
+        x: 1
+        y: 8
+        width: 64
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b5ee90ca75a21320800000000000000
-      internalID: 2527264287544501689
+      spriteID: 6acb86312cb8fe3a0800000000000000
+      internalID: -6633930060427903834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EsecampusIdle_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 8
+        width: 62
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04258e20089957d40800000000000000
+      internalID: 5581536088279241280
       vertices: []
       indices: 
       edges: []
@@ -148,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aernaaaaaaa_0: 2527264287544501689
+      EsecampusIdle_0: -6633930060427903834
+      EsecampusIdle_1: 5581536088279241280
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
