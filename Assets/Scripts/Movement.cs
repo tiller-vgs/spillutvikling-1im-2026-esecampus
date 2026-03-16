@@ -12,6 +12,13 @@ public class Movement : MonoBehaviour
     [SerializeField] private Transform grounCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    [SerializeField] private Animator anim;
+
+    void Start()
+    {
+        anim = gameObject.GetComponent<Animator>();
+    }
+
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
@@ -40,6 +47,16 @@ public class Movement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+        if (Mathf.Abs(horizontalInput) > 0.1f)
+        {
+            Debug.Log("Running");
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            Debug.Log("Idle");
+            anim.SetBool("isRunning", false);
+        }
     }
 
     private bool isGrounded()

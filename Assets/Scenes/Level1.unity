@@ -1371,6 +1371,7 @@ GameObject:
   - component: {fileID: 560209627}
   - component: {fileID: 560209628}
   - component: {fileID: 560209629}
+  - component: {fileID: 560209630}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -1548,6 +1549,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
+  anim: {fileID: 0}
 --- !u!114 &560209627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,7 +1585,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_health
   PlayerHealth: 3
   PlayerDead: 0
---- !u!95 &560209629
+--- !u!111 &560209629
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560209621}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: d0019680659fb4851855a619f19c4969, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 048843572a52a45a2aa7df037fdc7d19, type: 2}
+  - {fileID: 7400000, guid: d0019680659fb4851855a619f19c4969, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &560209630
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -1593,7 +1613,7 @@ Animator:
   m_GameObject: {fileID: 560209621}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4c1cdffc615f84f39ac67a5058c6cc00, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9d71d5f34cb3044c48af9f58899c8762, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
