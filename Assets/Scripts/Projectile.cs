@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class Projectile : MonoBehaviour
 {
     private Transform target;
+    private Transform previosTarget;
     private float moveSpeed;
     private float maxMoveSpeed;
     private float trajectoryMaxRelativeHeight;
@@ -12,14 +13,38 @@ public class Projectile : MonoBehaviour
     private AnimationCurve projectileSpeedAnimationCurve;
     private AnimationCurve trajectoryAnimationCurve;
     private AnimationCurve axisCorrectionAnimationCurve;
-    
+
+    private Vector3 targetposition;
+
     private Vector3 trajectoryStartPoint;
     private Vector3 projectileMoveDir;
+
+
+    private void Awake()
+    {
+        //this.player.position = target.position;
+    }
 
 
     private void Start()
     {
         trajectoryStartPoint = transform.position;
+
+        previosTarget = target;
+        Vector3 trajectoryRange = target.position - trajectoryStartPoint;
+
+        Vector3 test = target.position;
+        test.x = 10;
+
+        //float TargetX = target.position.x;
+        //float TargetY = target.position.y;
+        //float targetZ = target.position.z;
+
+        //float TrajectoryX= trajectoryStartPoint.position.x;
+        //float TrajectoryY= trajectoryStartPoint.position.y;
+        //float TrajectoryZ = trajectoryStartPoint.position.z;
+
+
     }
     private void Update()
     {
@@ -30,9 +55,17 @@ public class Projectile : MonoBehaviour
     }
     private void UpdateprojectilePosition()
     {
+        if (targetposition != null)
+        {
+            targetposition = target.position;
+        }
+        
 
+        //previosTarget.position - trajectoryStartPoint
 
-        Vector3 trajectoryRange = target.position - trajectoryStartPoint;
+        //Vector3 trajectoryRange = (TargetX - TrajectoryX, TargetY - TrajectoryY, TargetZ - TrajectoryZ);
+        //Vector3 trajectoryRange = target.position - trajectoryStartPoint;
+        Vector3 trajectoryRange = targetposition - trajectoryStartPoint;
         if (trajectoryRange.x < 0)
         { 
         // shooter located bhind the player 
@@ -60,6 +93,7 @@ public class Projectile : MonoBehaviour
     public void InitializeProjectile(Transform target, float maxMoveSpeed, float trajectoryMaxRelativeHeight)
     {
         this.target = target;
+        this.previosTarget = target;
         this.maxMoveSpeed = maxMoveSpeed;
         float xDistanceToTarget = target.position.x - transform.position.x;
 

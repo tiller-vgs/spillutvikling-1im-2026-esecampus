@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_health : MonoBehaviour, IDamageable
 {
@@ -49,6 +50,8 @@ public class Player_health : MonoBehaviour, IDamageable
     private void Die()
     {
     Destroy(gameObject);
+    SceneManager.LoadScene("Death");
+
     }
 
 
