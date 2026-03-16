@@ -21,10 +21,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private List<IDamageable> iDamageables = new List<IDamageable>();
 
+    [SerializeField] private Animator anim;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        anim = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -41,7 +43,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
             {
                 attackTimeCounter = 0.0f;
                 AttackRight();
-                //anim.SetTrigger("Attack");
             }
             if (Input.GetButtonDown("AttackLeft") && attackTimeCounter >= attackTime)
             {
@@ -55,6 +56,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void AttackLeft()
     {
+        anim.SetTrigger("playerAttack");
         hits = Physics2D.CircleCastAll(attackTransformLeft.position, attackRange, transform.right, 0f, enemyLayer);
 
         for (int i = 0; i < hits.Length; i++)
@@ -74,6 +76,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
 
     private void AttackRight()
     {
+        anim.SetTrigger("playerAttack");
         hits = Physics2D.CircleCastAll(attackTransformRight.position, attackRange,transform.right, 0f , enemyLayer);
 
         for (int i = 0; i < hits.Length; i++)
